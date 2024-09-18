@@ -36,8 +36,41 @@ npm run dev
 It starts the development server. On following the link provided, you get to see the sample app.
 <br>If you ever intend to change the command for runnig the code, you can do that by making some changes in the package.json file.
 
+### Integrating tailwind css in vite
+Since we are using tailwind css instead of vanilla css, so we need to install its packages as dev-dependencies.
+``` js
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+The above code install packages for tailwind css and initializes it
+<br>Then configure your 'tailwind.config.js' file
+``` js
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+Then add '@tailwind' directives for each of Tailwind's layer in your './src/index.css' file
+``` js
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+Then restart your build process
+``` js
+npm run dev
+```
+
 ### Initial Configuration
 Here are some of the dependencies and devDependencies packages needed to be installed for the project development
+<br><br>
 ``` js
 npm i prop-types
 ```
