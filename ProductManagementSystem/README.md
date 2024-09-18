@@ -70,15 +70,23 @@ npm run dev
 
 ### Initial Configuration
 Here are some of the dependencies and devDependencies packages needed to be installed for the project development
-<br><br>
-``` js
-npm i prop-types
-```
-This package allows you to set the required dataType for the props which is passed as argument. If the argument passed is not of the type specified then, it throws console error
+
+#### Setting up routes
+First install the package:
 ``` js
 npm i react-router-dom
 ```
 This package allows to navigate from one route to the other wihtout page refreshing
+<br>Then in './src/App.jsx' file, import BrowserRouter, Routes and Route using the following command
+``` js
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+```
+Then you can set routes in your jsx
+
+``` js
+npm i prop-types
+```
+This package allows you to set the required dataType for the props which is passed as argument. If the argument passed is not of the type specified then, it throws console error
 
 [comment]: # (## Developing
 In order to develop the project, follow these steps)
