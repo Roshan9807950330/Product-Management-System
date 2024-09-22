@@ -91,10 +91,10 @@ import { Link } from "react-router-dom"
 ```
 
 
-[comment]: # (``` js
+``` js
 npm i prop-types
 ```
-This package allows you to set the required dataType for the props which is passed as argument. If the argument passed is not of the type specified then, it throws console error)
+This package allows you to set the required dataType for the props which is passed as argument. If the argument passed is not of the type specified then, it throws console error
 
 [comment]: # (## Developing
 In order to develop the project, follow these steps)
