@@ -81,12 +81,20 @@ This package allows to navigate from one route to the other wihtout page refresh
 ``` js
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 ```
-Then you can set routes in your jsx
-
+Then you can set routes in your jsx.
+<br>We can change routes through anchor tag "<a href=""></a>" but this refreshes the page and re-render all the components. So, it is not viable for react. 
+<br>Hence, we choose to use Link "<Link to=""></Link>" which is provided by "react-router-dom" package itself
+<br>To use it first we need to install react-router-dom package as stated earlier and then import Link to the file, where we want to change route. 
+<br>To import use the following command
 ``` js
+import { Link } from "react-router-dom"
+```
+
+
+[comment]: #(``` js
 npm i prop-types
 ```
-This package allows you to set the required dataType for the props which is passed as argument. If the argument passed is not of the type specified then, it throws console error
+This package allows you to set the required dataType for the props which is passed as argument. If the argument passed is not of the type specified then, it throws console error)
 
 [comment]: # (## Developing
 In order to develop the project, follow these steps)
