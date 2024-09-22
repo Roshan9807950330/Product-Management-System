@@ -1,8 +1,11 @@
+import Navbar from "../components/Navbar"
+import FormComponent from "../components/FormComponent"
 
 const Create = () => {
   return (
     <>
-     <h1>This is create page</h1>  
+     <Navbar/>
+     <FormComponent/>
     </>
   )
 }
