@@ -1,9 +1,12 @@
+import Navbar from "../components/Navbar"
+import ProductDetails from "../components/ProductDetails"
 
 
 const Single = () => {
   return (
     <>
-     <h1>This is single page</h1> 
+     <Navbar />
+     <ProductDetails />
     </>
   )
 }

@@ -5,7 +5,7 @@ const Create = () => {
   return (
     <>
      <Navbar/>
-     <FormComponent/>
+     <FormComponent path="Add"/>
     </>
   )
 }

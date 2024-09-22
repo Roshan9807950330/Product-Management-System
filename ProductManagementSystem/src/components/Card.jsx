@@ -1,8 +1,9 @@
-
+import { Link } from "react-router-dom"
 
 const Card = () => {
   return (
     <>
+     <Link to="/product">
      <div className="max-w-sm rounded overflow-hidden shadow-lg">
         <img className="w-full" src="img/card-top.jpg" alt="Sunset in the mountains" />
         <div className="px-6 py-4">
@@ -18,6 +19,7 @@ const Card = () => {
 
         </div>
       </div> 
+     </Link>
     </>
   )
 }
